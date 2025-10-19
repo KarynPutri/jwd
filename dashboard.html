@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Company Profile</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <!-- Dashboard Page -->
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="dashboard-logo">TechPro</div>
+                <div class="user-menu">
+                    <div class="user-info">
+                        <div class="user-name" id="dashboardUserName">User Name</div>
+                        <div class="user-email" id="dashboardUserEmail">user@example.com</div>
+                    </div>
+                    <button class="logout-btn" id="logoutBtn">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>Selamat Datang di TechPro</h1>
+                <p>Perusahaan teknologi terdepan dengan solusi inovatif untuk bisnis masa depan</p>
+            </section>
+
+            <!-- About Section -->
+            <section class="section">
+                <div class="section-title">
+                    <h2>Tentang Kami</h2>
+                    <p>TechPro didirikan pada tahun 2015 dengan visi untuk mentransformasi bisnis melalui teknologi</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Visi dan Misi</h3>
+                        <p>Kami percaya bahwa teknologi yang tepat dapat mengubah cara bisnis beroperasi dan bersaing di pasar global. Dengan tim ahli yang berpengalaman, kami berkomitmen untuk memberikan solusi terbaik bagi klien kami.</p>
+                        <p>Nilai-nilai kami mencakup inovasi, kualitas, integritas, dan komitmen terhadap kesuksesan klien.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Tentang Kami">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section class="section">
+                <div class="section-title">
+                    <h2>Layanan Kami</h2>
+                    <p>Berbagai layanan teknologi untuk mendukung pertumbuhan bisnis Anda</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">💻</div>
+                        <h3>Web Development</h3>
+                        <p>Website responsif dan aplikasi web custom untuk bisnis Anda</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Mobile Apps</h3>
+                        <p>Pengembangan aplikasi mobile untuk iOS dan Android</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">☁️</div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Migrasi dan optimasi sistem ke platform cloud</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔒</div>
+                        <h3>Cybersecurity</h3>
+                        <p>Perlindungan sistem dan data dari ancaman siber</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="section">
+                <div class="section-title">
+                    <h2>Tim Kami</h2>
+                    <p>Bertemu dengan tim profesional yang akan membantu mewujudkan visi digital Anda</p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="CEO" class="member-photo">
+                        <h3>Alex Johnson</h3>
+                        <p>CEO & Founder</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="CTO" class="member-photo">
+                        <h3>Sarah Miller</h3>
+                        <p>Chief Technology Officer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Lead Developer" class="member-photo">
+                        <h3>Michael Chen</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Designer" class="member-photo">
+                        <h3>Emily Davis</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="section">
+                <div class="section-title">
+                    <h2>Hubungi Kami</h2>
+                    <p>Silakan hubungi kami untuk konsultasi gratis</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subjek" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Pesan Anda" rows="5" required style="width: 100%; padding: 12px 15px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 1rem;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <div class="header-content">
+                <p>&copy; 2024 TechPro. Semua hak dilindungi.</p>
+                <p>Email: info@techpro.com | Telp: (021) 1234-5678</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/database.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

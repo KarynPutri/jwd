@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Company Profile</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">TechPro</div>
+        <div class="company-name">Company Profile</div>
+        
+        <form id="loginForm" class="login-form">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Masukkan email Anda" required>
+                <div class="error-message" id="emailError">Email tidak valid</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Masukkan password Anda" required>
+                <div class="error-message" id="passwordError">Password salah</div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Login</button>
+            
+            <div class="form-footer">
+                <p>Belum punya akun? <a href="#" id="showRegister">Daftar di sini</a></p>
+            </div>
+        </form>
+
+        <form id="registerForm" class="login-form" style="display: none;">
+            <div class="form-group">
+                <label for="registerName">Nama Lengkap</label>
+                <input type="text" id="registerName" placeholder="Masukkan nama lengkap" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" placeholder="Masukkan email Anda" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" placeholder="Buat password" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="registerConfirmPassword">Konfirmasi Password</label>
+                <input type="password" id="registerConfirmPassword" placeholder="Konfirmasi password" required>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Daftar</button>
+            
+            <div class="form-footer">
+                <p>Sudah punya akun? <a href="#" id="showLogin">Login di sini</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/database.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
